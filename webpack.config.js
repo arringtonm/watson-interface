@@ -40,7 +40,19 @@ module.exports = {
           emitWarning: true,
           configFile: "./.eslintrc.json"
         }
+
+        },
+        {
+          test: /\.(png|gif|jp(e*)g|svg)$/,
+          use: {
+            loader: 'url-loader',
+            options: {
+              limit: 8000,
+              name: 'images/[hash]-[name].[ext]'
+            }
+          }
       },
+
       {
         test: /\.jsx?$/,
         loader: "babel-loader",
@@ -51,12 +63,14 @@ module.exports = {
             "react",
           ],
           plugins: [
-            "react-hot-loader/babel"
+            "react-hot-loader/babel",
+            "styled-jsx/babel"
           ]
         }
       }
     ]
   },
+
 
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
@@ -64,7 +78,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template:'template.ejs',
       appMountId: 'react-app-root',
-      title: 'React Project',
+      title: 'Michael\'s IBM Watson Interface',
       filename: resolve(__dirname, "build", "index.html"),
     }),
   ]
