@@ -9,19 +9,14 @@ function TranslateLogic() {
 
 
 
-  // let inputtedText = document.getElementById('input');
-  // return(inputtedText);
+  // let inputText = 'this is my test input';
+
+  console.log('it calls');
 
 
 
-
-
-
-
-
-
-  let translatedText = StaticJSON.translations[0].translation;
-  return(translatedText);
+  // let translatedText = StaticJSON.translations[0].translation;
+  // return(translatedText);
 
 
 }

@@ -80,6 +80,8 @@ function InputOutput() {
             <p>{ TranslateLogic() }</p>
           </div>
         </div>
+        <br></br>
+        <button onClick={TranslateLogic}>Translate</button>
       </div>
     </div>
   );
