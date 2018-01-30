@@ -2,7 +2,7 @@
 
 ### Installation
 
-Clone repository from GitHub, `npm install`, `npm start`. (Requires internet connection for installation and hosted images)
+Clone repository from GitHub, `npm install`, `npm start`. 
 
 
 ### Uses of State

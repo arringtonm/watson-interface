@@ -2,7 +2,14 @@ import React from 'react';
 import Header from './Header';
 import InputOutput from './InputOutput';
 
-function App(){
+
+
+class App extends React.component {
+  constructor(props){
+    super(props);
+    this.state = {}
+  }
+
 
   let styles = {
     padding: '0px',
@@ -12,7 +19,7 @@ function App(){
     alignItems: 'center',
     justifyContent: 'center',
     fontFamily: 'sans-serif',
-    fontWeight: '200'
+    fontWeight: '200',
   };
 
   return (
@@ -20,7 +27,7 @@ function App(){
       <Header/>
       <InputOutput/>
     </div>
-  );
+    );
+  }
 }
-
 export default App;

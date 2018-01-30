@@ -1,6 +1,8 @@
 import React from 'react';
 import TranslateLogic from './TranslateLogic';
-import roughheads from '../assets/images/roughheads.png';
+// import roughheads from '../assets/images/roughheads.png';
+import heads from '../assets/images/headscropped.png';
+import arrow from '../assets/images/linkarrow.png';
 
 function InputOutput() {
 
@@ -30,6 +32,7 @@ function InputOutput() {
       width: '300px',
       padding: '15px',
     },
+
     textarea: {
       border: 'none',
       fontFamily: 'sans-serif',
@@ -38,40 +41,47 @@ function InputOutput() {
       color: '#3C89AA',
       resize: 'none',
       width: '100%',
-      height: '100%',
+      height: '90%',
       outline: 'none',
     },
     heads: {
       width: '220px',
       marginBottom: '10px'
+    },
+    arrow: {
+      transform: 'translate(5px,-15px)'
+    },
+    select: {
+      fontSize: '12px',
+      marginBottom: '20px'
+    },
+    selectR: {
+      fontSize: '12px',
+      textAlign: 'right',
+      marginBottom: '20px',
     }
   }
 
   return (
     <div>
       <div style={styles.group}>
-        <img style={styles.heads} src={roughheads}/>
+        <div style={styles.headholder}>
+          <img style={styles.heads} src={heads}/>
+          <img style={styles.arrow} src={arrow}/>
+        </div>
         <div style={styles.inputOutputHolder}>
           <div style={styles.boxLeft}>
-            <textarea style={styles.textarea}>
+            <div><p style={styles.select}>English<img src={arrow}/></p></div>
+            <textarea id='input' style={styles.textarea} placeholder='Enter text'>
             </textarea>
           </div>
           <div style={styles.boxRight}>
+            <div><p style={styles.selectR}>English<img src={arrow}/></p></div>
             <p>{ TranslateLogic() }</p>
           </div>
         </div>
       </div>
-      <style jsx>{`
-          textarea:active {
-            outline: 'none',
-            color: 'red'
-          }
-
-          `}
-      </style>
     </div>
-
-
   );
 
 
