@@ -1,8 +1,18 @@
-# React Fundamental & State Code Review
+# Michael's Design Capstone Project
+
+### Description
+
+This project is an interface for IBM's Watson, which is a Natural Language Processing machine.
+
+
+### Features
+
+As of January 31st, this project only offers language translation.
+
 
 ### Installation
 
-Clone repository from GitHub, `npm install`, `npm start`. 
+Clone repository from GitHub, `npm install`, `npm start`. Find web application in your browswer at `https://localhost:3000`
 
 
 ### Uses of State
