@@ -78,3 +78,15 @@
   height: 90%;
   outline: none;
 }
+
+.select {
+  margin-bottom: 10px;
+}
+.selectR {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+::placeholder {
+  color: #3C89AA;
+}
