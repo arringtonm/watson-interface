@@ -10,7 +10,7 @@ $(document).ready(function() {
   $("#input").keyup(function() {
     input = $("#input").val();
     clearTimeout(timer);
-    timer = setTimeout(dummy, 500, input);
+    timer = setTimeout(translator, 500, input);
   });
 });
 
@@ -28,27 +28,37 @@ let translator = function(input) {
   // input as parameter
 
   let pageDomain = 'conversational';
-  // hard coded language style. other options include 'news' and 'patent'
   let inputLang = 'en';
-  // temporarily hard coded 'from' language.
   let outputLang = 'es'
+  // hard coded language style. other options include 'news' and 'patent'
+  // temporarily hard coded 'from' language.
 
   let model_id = inputLang + '-' + outputLang;
   let callData = {
     model_id: model_id,
-    text: inputText
+    text: input
   };
 
 
   let restAPICall = {
-    type: 'POST',
-    url: '/api/translate',
-    // data: callData,
+    type: 'GET',
+    url: 'https://gateway.watsonplatform.net/language-translator/api/',
+    data: callData,
     dataType: 'json',
     headers: {
-      'X-WDC-PL-OPT-OUT': '0',
-      'X-Watson-Technology-Preview': '2017-07-01'
-    },
+      'X-Watson-Learning-Opt-Out': 'false',
+      
+     },
     async: true
   }
+
+  $.ajax(restAPICall)
+    .done(function (data) {
+      $("#output").text(data['translations'][0]['translation'])
+    })
+    .fail(function (jqXHR, statustext, errorthrown) {
+      console.log(statustext + errorthrown);
+    });
+
+
 }
