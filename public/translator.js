@@ -20,11 +20,15 @@ $(document).ready(function() {
 
 // to do:
 // add in middle function that checks length of input area, cleans output area
-// add auto language detection 
+// add auto language detection
 
 
 
-
+let middleMan = function(input) {
+  if (input = $('#input').val().length === 0) {
+    
+  };
+}
 
 
 let translator = function(input) {

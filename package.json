@@ -1,6 +1,6 @@
 {
-  "name": "Michael's Watson Interface",
-  "version": "1.0",
+  "name": "michaels-watson-interface",
+  "version": "1.0.0",
   "description": "Front-end interface for IBM's Watson services",
   "dependencies": {
     "body-parser": "~1.17.2",

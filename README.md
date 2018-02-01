@@ -20,6 +20,30 @@ Clone repository from GitHub, `npm install`, `npm start`. Find web application i
 My working assumption is that state will at the App.jsx level as everything immediately below it will need props; this may change when I implement routing and active link titles. I'm still wrapping my head around React and may not know until refactoring during next week.  
 
 
-### Proposed (anticipated) component routing for Capstone project.
 
-![alt-tag-here](componentstructure.png)
+----
+
+
+### To-Do:
+
+- Input Language Control
+  - Drop down (easier)
+  - Auto detect by default (harder)
+- Auto resize text based on character count
+- Add indicator ('...') progress bar somewhere
+- Add option to auto copy
+
+    `var copyText = document.getElementById("myInput");
+    copyText.select();
+    document.execCommand("Copy");`
+
+- Output language
+  - Drop down option
+  - Auto populate or limit to 'safe' options 
+- Output text to speech?
+- Documentation
+- Favicon
+- Error handling for text input
+- Option for timer adjustment / manually enter
+- Responsive design (vertical full screen box split)
+- Find somewhere to incorporate goldenrod or salmon colors
