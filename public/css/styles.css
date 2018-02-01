@@ -79,10 +79,29 @@
   outline: none;
 }
 
-.select {
+.selectBox {
   margin-bottom: 10px;
+  width: 80px;
+  overflow: hidden;
+  background: url('../images/linkarrow.png') no-repeat right;
 }
-.selectR {
+
+.selectBox select {
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  font-weight: 200;
+  color: #3C89AA;
+  padding: 5px;
+}
+
+.selectBox option {
+  color: green;
+}
+
+.selectBoxR {
   text-align: right;
   margin-bottom: 10px;
 }
