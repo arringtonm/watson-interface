@@ -10,18 +10,15 @@
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"></script>
     <script src="translator.js"></script>
-
   </head>
   <body>
     <div class="container">
       <div class="header">
-        <p>Michael's IBM Watson Interface</p>
+        <p>Michael's Simple Translator</p><p id="headerRight">Powered by IBM Watson</p>
       </div>
-
       <div class="inputOutputGroup">
         <div class="headHolder">
-          <img class="heads" src="images/headscropped.png">
-          <!-- <img class="arrow" src="images/linkarrow.png"> -->
+          <img class="heads" src="images/heads.png">
         </div>
         <div class="inputOutputHolder">
           <div class="boxLeft">
@@ -32,18 +29,27 @@
                 <option value="es">Spanish</option>
               </select>
             </div>
-
-            <textarea id="input" class="textarea" placeholder="Enter text"></textarea>
+            <textarea id="input" class="textarea" placeholder="Enter text" autofocus></textarea>
           </div>
           <div class="boxRight">
+            <div class="menuRight">
             <div class="selectBox">
               <select id="outputSelect">
+                <option value="ar">Arabic</option>
                 <option value="en">English</option>
-                <option value="fr">French</option>
+                <option value="fr" selected="selected">French</option>
+                <option value="de">German</option>
+                <option value="it">Italian</option>
+                <option value="ja">Japanese</option>
+                <option value="ko">Korean</option>
                 <option value="es">Spanish</option>
+
               </select>
             </div>
+          </div>
             <textarea id="output" class="textarea"></textarea>
+            <img id="clipboard" class="clipboard" src="images/clipboard.png" onClick="copyOutput()">
+            <img id="success" class="success hidden" src="images/success.png">
           </div>
         </div>
       </div>

@@ -14,7 +14,9 @@ As of January 31st, this project only offers language translation.
 
 Clone repository from GitHub, `npm install`, `npm build`, `npm start`. Find web application in your browswer at https://localhost:3000
 
+### Known Bugs
 
+~~Text does not automatically resize when deleting; not sure if this is a logic issue or an issue related to how `keyup` works in JavaScript.~~ (Fixed!)
 
 
 ----
@@ -22,34 +24,35 @@ Clone repository from GitHub, `npm install`, `npm build`, `npm start`. Find web 
 
 ### To-Do:
 
-- Output language
-  - Drop down option
+- ~~Output language~~
+  - ~~Drop down option~~
   - Auto populate or limit to 'safe' options
-- Input Language Control
-  - Drop down (easier)
+- ~~Input Language Control~~
+  - ~~Drop down (easier)~~
   - Auto detect by default (harder)
 - ~~Error handling for zero length inputs~~
-- Auto resize text based on character count
+- ~~Auto resize text based on character count~~
+- Add option to translate two directionally
 - Option for timer adjustment / manually enter
 - Add indicator ('...') progress bar somewhere
 - Documentation
-- Add option to auto copy
+- ~~Add option to auto copy~~
 
-    `let copyText = $('#output').val();`
+    ~~`let copyText = $('#output').val();`~~
 
-    `copyText.select();`
+    ~~`copyText.select();`~~
 
-    `document.execCommand("Copy");`
+    ~~`document.execCommand("Copy");`~~
 
 
 - Favicon
-- Add error catching language and notifications
+- ~~Add error catching language and notifications~~
 - Prettyify server start language
 - Style dropdown menus (idea: https://codepen.io/afalchi82/pen/aNXjgb)
 - Responsive design (vertical full screen box split)
 - Find somewhere to incorporate goldenrod or salmon colors
 - Refactor into React
-- Rename images/etc for cleanliness
+- ~~Rename images/etc for cleanliness~~
 
 ### Scrapped To-Do:
 

@@ -14,6 +14,7 @@
 
 .header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   top: 0px;
   height: 60px;
@@ -26,7 +27,9 @@
   font-size: 24px;
   color: white;
 }
-
+#headerRight {
+  font-size: 14px;
+}
 
 /* Input/Out block: */
 
@@ -42,16 +45,12 @@
   margin-bottom: 10px;
 }
 
-.headholder .arrow {
-  transform: translate(5px,-15px);
-}
-
 .inputOutputHolder {
   display: flex;
   flex-direction: row;
   width: 600px;
   height: 300px;
-  border-radius: 7px;
+  border-radius: 3px;
   box-shadow: 0px 2px 4px 2px rgba(00,00,00,0.18);
   color: #3C89AA;
 }
@@ -68,15 +67,28 @@
 }
 
 .textarea {
+  align-items: center;
   border: none;
   font-family: sans-serif;
   font-weight: 200;
-  font-size: 16px;
   color: #3C89AA;
   resize: none;
   width: 100%;
   height: 90%;
   outline: none;
+}
+
+.size300 {
+  font-size: 300%;
+}
+.size200 {
+  font-size: 200%;
+}
+.size150 {
+  font-size: 150%;
+}
+.size100 {
+  font-size: 100%;
 }
 
 .selectBox {
@@ -86,26 +98,49 @@
   background: url('../images/linkarrow.png') no-repeat right;
 }
 
+
 .selectBox select {
   appearance: none;
   -webkit-appearance: none;
   background: transparent;
   border: none;
+  width: 80px;
   font-size: 14px;
   font-weight: 200;
   color: #3C89AA;
-  padding: 5px;
+  padding: 0px;
 }
 
-.selectBox option {
-  color: green;
-}
-
-.selectBoxR {
-  text-align: right;
-  margin-bottom: 10px;
+.selectBox select:focus {
+  outline: none;
 }
 
 ::placeholder {
-  color: #3C89AA;
+  color: #B7E1F3;
+}
+
+
+.clipboard {
+  height: 30px;
+  float: right;
+  transform: translateY(-280px);
+}
+
+.clipboard:hover {
+  cursor: pointer;
+}
+
+.success {
+  color: #B7E1F3;
+  height: 20px;/* filter:  */
+  transform: translate(250px,-275px);
+
+}
+
+.visible {
+  display: flex;
+}
+
+.hidden {
+  display: none;
 }

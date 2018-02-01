@@ -1,22 +1,51 @@
 
 $(document).ready(function() {
 
+  $('textarea').addClass('size300');
+
   let timer = '';
   let input = '';
 
   $('#input').keyup(function() {
     input = $('#input').val();
     clearTimeout(timer);
-    timer = setTimeout(inputCheck, 250, input);
+    timer = setTimeout(inputCheck, 100, input);
   });
 });
 
-
-
 let inputCheck = function(input) {
+  if (input.length <= 10) {
+    $('textarea').removeClass('size200');
+    $('textarea').addClass('size300');
+  } else if (input.length >= 11 && input.length <= 30) {
+    $('textarea').removeClass('size300');
+    $('textarea').addClass('size200');
+  } else if (input.length >= 31 && input.length <= 60) {
+    $('textarea').removeClass('size200');
+    $('textarea').addClass('size150');
+  } else if (input.length >= 61) {
+    $('textarea').removeClass('size150');
+    $('textarea').addClass('size100');
+  }
   if (input.length === 0) {
     $('#output').text('');
+    $('textarea').addClass('size300');
   } else translator(input);
+}
+
+let copyOutput = function() {
+  let copyText = document.querySelector('#output');
+  copyText.select();
+  document.execCommand('copy');
+  $('#clipboard').addClass('hidden');
+  $('#success').removeClass('hidden')
+  setTimeout(swapIcons, 1000);
+
+}
+
+let swapIcons = function() {
+  $('#clipboard').removeClass('hidden');
+  $('#success').addClass('hidden');
 }
 
 
@@ -47,5 +76,6 @@ let translator = function(input) {
     .fail(function (jqXHR, status, error) {
       console.log(status + error);
     });
+
 
 }
