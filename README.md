@@ -1,61 +1,54 @@
-# Michael's Design Capstone Project
+# Michael's IBM Watson Capstone Design Project
 
 ### Description
 
-This project is an interface for IBM's Watson, which is a Natural Language Processing machine.
+This project is an interface for IBM's Watson, which is a Natural Language Processing machine. It was created to satisfy the requirements for the capstone project at Epicodus.
 
 
 ### Features
 
-As of January 31st, this project only offers language translation.
+This project translates text in real time between eight languages. Planned features are listed below in the To-Do section.
 
 
 ### Installation
 
 Clone repository from GitHub, `npm install`, `npm build`, `npm start`. Find web application in your browswer at https://localhost:3000
 
-### Known Bugs
 
-~~Text does not automatically resize when deleting; not sure if this is a logic issue or an issue related to how `keyup` works in JavaScript.~~ (Fixed!)
+### Known Issues
 
+Connecting to IBM's Watson requires a rather detailed authentication process. I am currently working on a solution to let this project work in a standalone way.
 
-----
 
 
 ### To-Do:
 
-- ~~Output language~~
-  - ~~Drop down option~~
-  - Auto populate or limit to 'safe' options
-- ~~Input Language Control~~
-  - ~~Drop down (easier)~~
-  - Auto detect by default (harder)
-- ~~Error handling for zero length inputs~~
-- ~~Auto resize text based on character count~~
+- Auto detect input language
+- Auto populate output language fields
 - Add option to translate two directionally
 - Option for timer adjustment / manually enter
-- Add indicator ('...') progress bar somewhere
-- Documentation
-- ~~Add option to auto copy~~
-
-    ~~`let copyText = $('#output').val();`~~
-
-    ~~`copyText.select();`~~
-
-    ~~`document.execCommand("Copy");`~~
-
-
-- Favicon
-- ~~Add error catching language and notifications~~
+- Add indicator ('...') progress bar
+- Improve documentation (hello!)
+- Add favicon
 - Prettyify server start language
 - Style dropdown menus (idea: https://codepen.io/afalchi82/pen/aNXjgb)
-- Responsive design (vertical full screen box split)
+- Add responsive design (vertical full screen box split)
 - Find somewhere to incorporate goldenrod or salmon colors
-- Refactor into React
-- ~~Rename images/etc for cleanliness~~
+- Refactor into VueJS
 
-### Scrapped To-Do:
+### "Wishlist To-Do"
 
 - Output text to speech
   - Switch ports and run in parallel?
   - Double up services in same project
+- Drag and drop translation
+
+
+### Author
+
+This project was created by Michael Arrington in early 2018 while finishing up a coding boot-camp (Epicodus in Portland, OR). Michael is currently interning as a front-end developer at Trailhead Marketing (also in Portland) and pursuing full-time opportunities as a web and user interface/user experience designer.
+
+
+### License
+
+This project is distributed with a MIT License. All of IBM's code, including the Express server this project runs on top of, belongs to IBM.
