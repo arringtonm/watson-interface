@@ -2,7 +2,7 @@
 
 
 // Node express server & backend distributed by IBM
-// Translation project file in 'public/translator.js'
+// Michael's translation project file in 'public/translator.js'
 
 
 
@@ -101,4 +101,5 @@ require('./config/error-handler')(app);
 
 var port = process.env.PORT || process.env.VCAP_APP_PORT || 3000;
 app.listen(port);
-console.log('listening at:', port);
+console.log('Welcome to Michael\'s Simple Translator!');
+console.log(`Listening at http://localhost:${port}`);
