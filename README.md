@@ -1,72 +1,57 @@
-# Michael's Design Capstone Project
+# Michael's IBM Watson Capstone Design Project
 
 ![interface](watsonscreenshot.png)
 
+
 ### Description
 
-This project is an interface for IBM's Watson, which is a Natural Language Processing machine. Its current iteration uses Watson to provide real time text translation.
+This project is an interface for IBM's Watson, which is a Natural Language Processing machine. It was created to satisfy the requirements for the capstone project at Epicodus.
 
 
 ### Features
 
-This web application offers near real time translation of text inputs into a wide variety of languages. A very short countdown timer (100ms) keeps track of users' inputs and sends out an API call to Watson's Natural Language Processor to convert the entered text to the desired output.
+This project translates text in real time between eight languages. Planned and in-development features are listed below in the To-Do section.
 
 
 ### Installation
 
-
-Clone from GitHub repository, enter the created directory, then type `npm install`, `npm build`, `npm start`. You will find the web application in your browswer at https://localhost:3000
-
-(I haven't done comprehensive installation testing and some additional libraries may be required, but I anticipate these steps should work. Please contact the author with any troubles!)
-
-### Technologies Used
-
-- JavaScript ES6
-- CSS
-- Express
-- NodeJS
-- IBM's Watson SDK
+Clone repository from GitHub, `npm install`, `npm build`, `npm start`. Find web application in your browswer at https://localhost:3000
 
 
-I've learned that a lot of front end web developer work is focused on building on top of existing technologies, and that's exactly what I set out to do with this project. This project stands on the shoulders of giants by sending API calls to a thoroughly advanced machine and letting it do the heavy lifting. Locally, the project sits on an Express service that lets it interface with IBM's Watson, and runs on a NodeJS platform.
+### Known Issues
 
-The front end logic was originally written in React, but has since been refactored into vanilla JavaScript. It may
+Connecting to IBM's Watson requires a rather detailed authentication process. I am currently working on a solution to let this project work in a standalone way.
 
-
-### Known Bugs
-
-~~Text does not automatically resize when deleting; not sure if this is a logic issue or an issue related to how `keyup` works in JavaScript.~~ (Fixed!)
-
-
-----
 
 
 ### To-Do:
 
-- ~~Output language~~
-  - ~~Drop down option~~
-  - Auto populate or limit to 'safe' options
-- ~~Input Language Control~~
-  - ~~Drop down (easier)~~
-  - Auto detect by default (harder)
-- ~~Error handling for zero length inputs~~
-- ~~Auto resize text based on character count~~
+- Auto detect input language
+- Auto populate output language fields
 - Add option to translate two directionally
 - Option for timer adjustment / manually enter
-- Add indicator ('...') progress bar somewhere
-- Documentation
-- ~~Add option to auto copy~~
-- Favicon
-- ~~Add error catching language and notifications~~
-- ~~Prettyify server start language~~
+- Add indicator ('...') progress bar
+- Improve documentation (hello!)
+- Add favicon
+- Prettyify server start language
 - Style dropdown menus (idea: https://codepen.io/afalchi82/pen/aNXjgb)
-- Responsive design (vertical full screen box split)
+- Add responsive design (vertical full screen box split)
 - Find somewhere to incorporate goldenrod or salmon colors
-- Refactor into React
-- ~~Rename images/etc for cleanliness~~
+- Refactor into VueJS
 
-### Scrapped To-Do:
+### "Wishlist To-Do"
 
 - Output text to speech
   - Switch ports and run in parallel?
   - Double up services in same project
+- Drag and drop translation
+
+
+### Author
+
+This project was created by Michael Arrington in early 2018 while finishing up a coding boot-camp (Epicodus in Portland, OR). Michael is currently interning as a front-end developer at Trailhead Marketing (also in Portland) and pursuing full-time opportunities as a web and user interface/user experience designer.
+
+
+### License
+
+This project is distributed with a MIT License. All of IBM's code, including the Express server this project runs on top of, belongs to IBM.
