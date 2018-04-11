@@ -5,8 +5,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: sans-serif;
-  font-weight: 200;
+  /* font-family: sans-serif; */
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-weight: 300;
 }
 
 
@@ -23,7 +24,7 @@
   padding: 10px;
 }
 .header p {
-  font-weight: 100;
+  font-weight: 300;
   font-size: 24px;
   color: white;
 }
@@ -69,8 +70,8 @@
 .textarea {
   align-items: center;
   border: none;
-  font-family: sans-serif;
-  font-weight: 200;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-weight: 300;
   color: #3C89AA;
   resize: none;
   width: 100%;
