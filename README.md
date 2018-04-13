@@ -38,6 +38,7 @@ Connecting to IBM's Watson requires a rather detailed authentication process. I 
 - Add responsive design (vertical full screen box split)
 - Find somewhere to incorporate goldenrod or salmon colors
 - Refactor into VueJS
+- Add language-switch event to retranslate into new language
 
 ### "Wishlist To-Do"
 
