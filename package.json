@@ -11,6 +11,7 @@
     "express-secure-only": "^0.2.1",
     "extend": "~3.0.1",
     "helmet": "~3.8.1",
+    "hoek": "^5.0.3",
     "jade": "~1.11.0",
     "morgan": "~1.8.2",
     "npm": "^5.8.0",
