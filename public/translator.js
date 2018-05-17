@@ -6,6 +6,9 @@ $(document).ready(function() {
   $('#input').keyup(function() {
     input = $('#input').val();
     clearTimeout(timer);
+
+// Value for delay between translation updates (in milliseconds)
+
     timer = setTimeout(inputCheck, 100, input);
   });
 });
