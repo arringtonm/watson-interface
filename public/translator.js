@@ -1,17 +1,17 @@
 
 $(document).ready(function() {
-
   $('textarea').addClass('size300');
-
   let timer = '';
   let input = '';
-
   $('#input').keyup(function() {
     input = $('#input').val();
     clearTimeout(timer);
     timer = setTimeout(inputCheck, 100, input);
   });
 });
+
+
+// Checks character count of input and adjusts size of text to be a better fit
 
 let inputCheck = function(input) {
   if (input.length <= 10) {
@@ -33,6 +33,9 @@ let inputCheck = function(input) {
   } else translator(input);
 }
 
+
+// Copies output text to clipboard and displays success icon
+
 let copyOutput = function() {
   let copyText = document.querySelector('#output');
   copyText.select();
@@ -40,7 +43,6 @@ let copyOutput = function() {
   $('#clipboard').addClass('hidden');
   $('#success').removeClass('hidden')
   setTimeout(swapIcons, 1000);
-
 }
 
 let swapIcons = function() {
@@ -49,8 +51,9 @@ let swapIcons = function() {
 }
 
 
-let translator = function(input) {
+// Translation API lookup
 
+let translator = function(input) {
   let pageDomain = 'conversational';
   let inputLang = $('#inputSelect').val();
   let outputLang = $('#outputSelect').val();
@@ -76,6 +79,4 @@ let translator = function(input) {
     .fail(function (jqXHR, status, error) {
       console.log(status + error);
     });
-
-
 }
