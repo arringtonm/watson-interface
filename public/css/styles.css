@@ -24,6 +24,17 @@
   box-shadow: 0px 2px 4px rgba(00,00,00,0.15);
 
 }
+.header a {
+  /* color: #B7E1F3; */
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 2px solid #B7E1F3;
+}
+.header a:hover {
+  border-bottom: 2px solid white;
+  /* color: #B7E1F3; */
+
+}
 .header p {
   font-weight: 300;
   font-size: 24px;
@@ -32,6 +43,7 @@
 #headerRight {
   font-size: 14px;
 }
+
 
 /* Input/Out block: */
 
@@ -52,13 +64,10 @@
   flex-direction: row;
   width: 600px;
   height: 300px;
-  /* border-radius: 3px; */
   box-shadow: 0px 2px 4px rgba(00,00,00,0.15);
   border: 2px solid #88C7E2;
   caret-color: #88C7E2;
   color: #3C89AA;
-
-  caret
 }
 
 
@@ -67,7 +76,6 @@
   width: 300px;
   padding: 15px;
   border-right: 2px solid #88C7E2;
-
   /* border-right: 1px solid #DDD; */
 }
 
@@ -142,7 +150,7 @@
 
 .success {
   color: #B7E1F3;
-  height: 20px;/* filter:  */
+  height: 20px;
   transform: translate(250px,-275px);
 
 }
