@@ -24,6 +24,7 @@
 
 'use strict';
 
+require ('newrelic');
 require('dotenv').load({silent: true});
 var express  = require('express'),
   app        = express(),

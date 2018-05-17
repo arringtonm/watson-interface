@@ -1,5 +1,4 @@
 
-require ('newrelic');
 
 $(document).ready(function() {
   $('textarea').addClass('size300');
