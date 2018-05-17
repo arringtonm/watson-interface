@@ -162,3 +162,43 @@
 .hidden {
   display: none;
 }
+
+
+/*  Media query/Mobile site design */
+
+
+@media only screen and (max-width: 999px) {
+  .inputOutputGroup {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+    align-items: center;
+  }
+
+  .heads, .clipboard {
+    display: none;
+  }
+
+  .inputOutputHolder {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    /* box-shadow: 0px 2px 4px rgba(00,00,00,0.15); */
+    /* border: 2px solid #88C7E2; */
+    caret-color: #88C7E2;
+    color: #3C89AA;
+  }
+
+
+  .boxLeft, .boxRight {
+    border-bottom: 2px solid #88C7E2;
+    width: 100vw;
+    /* height: 50vh; */
+    height: calc(50vh - 30px);
+
+    padding: 15px;
+    /* border-right: 2px solid #88C7E2; */
+  }
+
+}
