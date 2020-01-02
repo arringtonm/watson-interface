@@ -25,12 +25,13 @@ Clone repository from GitHub, `npm install`, `npm build`, `npm start`. Find web 
 
 ### Known Issues
 
-Connecting to IBM's Watson requires a rather detailed authentication process. I am currently working on a solution to let this project work in a standalone way.
+Connecting to IBM's Watson requires a rather detailed authentication process. Due to the authentication challenges and breaking changes to the API, I am currently considering other API options.
 
 
 
 ### To-Do:
 
+- Update to v3 of IBM Watson API
 - Auto detect input language
 - Auto populate output language fields
 - Add option to translate two directionally
@@ -55,7 +56,7 @@ Connecting to IBM's Watson requires a rather detailed authentication process. I 
 
 ### Author
 
-This project was created by Michael Arrington in early 2018 while finishing up a coding boot-camp (Epicodus in Portland, OR). Michael is currently interning as a front-end developer at Trailhead Marketing (also in Portland) and pursuing full-time opportunities as a web and user interface/user experience designer.
+This project was created by Michael Arrington in early 2018 while finishing up a coding boot-camp (Epicodus in Portland, OR). Michael is currently working as a front-end developer at a boutique FinTech agency. 
 
 
 ### License
