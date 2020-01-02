@@ -4,7 +4,7 @@
 
 ### Current Status
 
-This project is currently unusuable due to [breaking changes](https://cloud.ibm.com/docs/services/language-translator?topic=language-translator-release-notes#breaking-changes) in IBM's API interface. Updates and revisions to this project are planned (solving this issue in addition to adding To-Do items) 
+This project is currently unusuable due to [breaking changes](https://cloud.ibm.com/docs/services/language-translator?topic=language-translator-release-notes#breaking-changes) in IBM's API. Updates and revisions to this project are planned (solving this issue in addition to adding To-Do items) 
 
 
 
