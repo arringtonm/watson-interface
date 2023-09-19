@@ -14,8 +14,8 @@
     "hoek": "^5.0.3",
     "jade": "~1.11.0",
     "morgan": "~1.9.1",
-    "newrelic": "^4.1.1",
-    "npm": "^9.6.2",
+    "newrelic": "^10.3.1",
+    "npm": "^9.7.2",
     "watson-developer-cloud": "~2.39.0"
   },
   "engines": {
@@ -38,6 +38,6 @@
     "test": "npm run lint"
   },
   "devDependencies": {
-    "eslint": "^4.18.2"
+    "eslint": "^8.43.0"
   }
 }
