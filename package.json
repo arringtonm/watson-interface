@@ -16,7 +16,7 @@
     "morgan": "~1.9.1",
     "newrelic": "^12.16.1",
     "npm": "^9.9.4",
-    "watson-developer-cloud": "~2.39.0"
+    "watson-developer-cloud": "~4.0.1"
   },
   "engines": {
     "node": ">=6.0",
