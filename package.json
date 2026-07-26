@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Front-end interface for IBM's Watson services",
   "dependencies": {
-    "body-parser": "~1.20.4",
+    "body-parser": "~1.20.6",
     "dotenv": "~4.0.0",
     "ejs": "^3.1.10",
     "express": "~4.22.1",
